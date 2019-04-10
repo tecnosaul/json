@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title></title>
+	<script type="http//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" src="nose.js"></script>
+	<script type="text/javascript">
+		function datos(){
+			alert("dentro del jason");
+			$.getJSON('nose.json?callback=?',{format:"json"},function(data){
+				alert("qlo= "+data[0].nombre);
+			});
+
+		}
+	</script>
+</head>
+<body onload="datos()">
+
+</body>
+</html>
